@@ -5,6 +5,7 @@ const path = require('path')
 const bad  = require('bad-words')
 const { Generator, generateLocation } = require('./utils/messages')
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./utils/users')
+const { addRooms, seeRooms } = require('./utils/rooms')
 //main constants
 const app = express()
 const server = http.createServer(app)

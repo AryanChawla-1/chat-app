@@ -3,9 +3,6 @@ const users = []
 // addUser, removeUser, getUser, getUsersInRoom
 
 const addUser = ({id, username, room})=>{
-    //clean the data
-    username = username.trim().toLowerCase()
-    room = room.trim().toLowerCase()
 
     //validate
     if(!username || !room){

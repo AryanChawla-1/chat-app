@@ -6,6 +6,7 @@ const real = message.value
 const button1 = document.querySelector('#message')
 const $messages = document.querySelector('#messages')
 
+
 // templates
 
 const messageTemplate = document.querySelector('#message-template').innerHTML
@@ -40,7 +41,7 @@ socket.on('location-message', (data)=>{
     $messages.insertAdjacentHTML('beforeend', html)
 })
 
-forma  .addEventListener('submit', (event)=>{
+forma .addEventListener('submit', (event)=>{
     //disable
     event.preventDefault()
 
@@ -81,3 +82,4 @@ socket.emit('join',  {username, room}, (error)=>{
         location.href = '/'
     }
 })
+
